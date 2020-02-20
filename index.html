@@ -4,9 +4,35 @@
     <meta charset="utf-8">
     <title>Proyecto JavaScript</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link id="theme" rel="stylesheet" href="green.css">
+
+    <!--Slider-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js" charset="utf-8"></script>
+
   </head>
   <body>
+
+    <!--Temas-->
+    <div id="theme-selector">
+      <div id="to-green">
+
+      </div>
+      <div id="to-red">
+
+      </div>
+      <div id="to-blue">
+
+      </div>
+    </div>
+
+
     <section id="global">
 
       <!--header-->
@@ -32,6 +58,11 @@
 
       <!--Slider-->
       <div id="slider">
+        <div class="bxslider">
+          <div><img src="img/hojas.jpg" title="Hojas"></div>
+          <div><img src="img/rojo.jpg" title="Rojo"></div>
+          <div><img src="img/cielo.jpg" title="Cielo"></div>
+          </div>
       </div>
 
       <!--Content-->
@@ -39,33 +70,9 @@
 
         <!--Articulos-->
         <div id="posts">
-            <article class="post">
-              <h2>Titulo del articulo</h2>
-              <span class="date">Fecha de publicacion</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="#" class="button-more">Leer más</a>
-            </article>
 
-            <article class="post">
-              <h2>Titulo del articulo 2</h2>
-              <span class="date">Fecha de publicacion</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="#" class="button-more">Leer más</a>
-            </article>
+          <!--Cargar posts desde JSON-->
 
-            <article class="post">
-              <h2>Titulo del articulo 3</h2>
-              <span class="date">Fecha de publicacion</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="#" class="button-more">Leer más</a>
-            </article>
-
-            <article class="post">
-              <h2>Titulo del articulo 4</h2>
-              <span class="date">Fecha de publicacion</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="button-more">Leer más</a>
-            </article>
         </div>
 
         <!--Sidebar-->
@@ -102,7 +109,9 @@
     </section>
 
       <!--Footer-->
-    <footer>Curso Javascript</footer>
+    <footer>Curso Javascript
+      <a href="#" class="subir">Ir al cielo</a>
+    </footer>
 
 
 

@@ -9,11 +9,6 @@
   clear: both;
 }
 
-body{
-  background: url('img/hojas.jpg');
-  background-attachment: fixex;
-}
-
 #global{
   width: 70%;
   margin: 0px auto;
@@ -30,7 +25,6 @@ body{
   font-size: 30px;
   letter-spacing: 4px;
   line-height: 80px;
-  background: #235E3D;
   color: white;
   text-align: center;
   width: 350px;
@@ -57,10 +51,6 @@ body{
 #menu ul li{
   height: 46px;
   display: inline-block;
-}
-
-#menu ul li:hover{
-  background: #235E3D;
 }
 
 #menu a{
@@ -112,7 +102,6 @@ body{
   text-align: center;
   display: block;
   padding: 15px;
-  background: #235E3D;
   color: white;
   text-decoration: none;
   margin-top: 10px;
@@ -135,7 +124,7 @@ body{
   text-align: center;
   line-height: 10px;
   color: #333;
-  background: url("/img/lines.jpg") repeat-x;
+  background: url("img/lines.png") repeat-x;
 }
 
 #sidebar img{
@@ -179,4 +168,46 @@ footer{
   padding-right: 20px;
   margin-top: 50px;
   line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{
+  height: 450px !important;
+}
+
+#theme-selector{
+  position: fixed;
+  top: 40%;
+  background: rgba(51, 51, 51, 0.5);
+  width: 50px;
+  height: 100px;
+}
+
+#to-green, #to-red, #to-blue{
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  display: block;
+  margin: 0px auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#to-green{
+  background: #235E3D;
+}
+
+#to-red{
+  background: #CA3413;
+}
+
+#to-blue{
+  background: #1F87C4;
+}
+
+.subir{
+  color: white;
+  text-decoration: none;
+  display: block;
+  float: right;
 }
