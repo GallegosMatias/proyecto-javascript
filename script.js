@@ -110,7 +110,14 @@ jQuery(document).ready(() => {
     $('#time').html(reloj);
   }), 1000
 
+  // validacion formulario contacto
+  $.validate({
+    lang: 'es'
+  });
 
+  $('form input[name="birth"]').datepicker({
+    dateFormat: 'dd-mm-yy'
+  });
 
 
 });

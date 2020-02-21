@@ -13,6 +13,7 @@
 
   <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
@@ -69,10 +70,35 @@
 
         <!--Articulos-->
         <div id="box">
-          <!--Cargar reloj-->
-          <div id="time">
+          <!--Cargar formulario de contacto-->
+          <h2>Contacto</h2>
 
-          </div>
+          <form id="contact-form" action="" method="POST">
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" data-validation="length alphanumeric" data-validation-length="min3">
+
+            <label for="surname">Apellido</label>
+            <input type="text" name="surname" value="" data-validation="length alphanumeric" data-validation-length="min3">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" value="" data-validation="email">
+
+            <label for="genre">Género</label>
+            <select name="genre" data-validation="required">
+              <option value="man">Hombre</option>
+              <option value="woman">Mujer</option>
+              <option value="Other">Otro</option>
+            </select>
+
+            <label for="birth">Fecha de nacimiento</label>
+            <input type="text" name="birth" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+            <label for="age">Edad</label>
+            <input type="number" name="age" data-validation="number">
+            <br>
+            <input type="submit" name="submit" value="Enviar">
+          </form>
 
 
         </div>
