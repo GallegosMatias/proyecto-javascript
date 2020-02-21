@@ -112,7 +112,9 @@ jQuery(document).ready(() => {
 
   // validacion formulario contacto
   $.validate({
-    lang: 'es'
+    lang: 'es',
+    errorMessagePosition: 'top',
+    scrollToTopOnError: true
   });
 
   $('form input[name="birth"]').datepicker({
