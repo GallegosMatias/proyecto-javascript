@@ -105,5 +105,12 @@ jQuery(document).ready(() => {
     });
   };
 
+  setInterval(() => {
+    var reloj = moment().format("hh:mm:ss");
+    $('#time').html(reloj);
+  }), 1000
+
+
+
 
 });

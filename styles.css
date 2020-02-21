@@ -222,3 +222,15 @@ footer{
 #accordion{
   margin-top: 20px;
 }
+
+#time{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Helvetica, Arial;
+  color: #333;
+  border: 5px solid #333;
+  width: 25%;
+  padding: 30px;
+  margin: 0px auto;
+  text-align: center;
+}

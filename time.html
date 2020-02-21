@@ -5,12 +5,11 @@
     <title>Proyecto JavaScript</title>
     <link rel="stylesheet" href="styles.css">
     <link id="theme" rel="stylesheet" href="green.css">
-  <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
     <!--Slider-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
 
   <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
@@ -18,6 +17,12 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js" charset="utf-8"></script>
+
+  <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+</script>
 
   </head>
   <body>
@@ -59,22 +64,16 @@
         </nav>
       </header>
 
-      <!--Slider-->
-      <div id="slider">
-        <div class="bxslider">
-          <div><img src="img/hojas.jpg" title="Hojas"></div>
-          <div><img src="img/rojo.jpg" title="Rojo"></div>
-          <div><img src="img/cielo.jpg" title="Cielo"></div>
-          </div>
-      </div>
-
       <!--Content-->
       <section id="content">
 
         <!--Articulos-->
-        <div id="posts">
+        <div id="box">
+          <!--Cargar reloj-->
+          <div id="time">
 
-          <!--Cargar posts desde JSON-->
+          </div>
+
 
         </div>
 
@@ -83,7 +82,7 @@
           <div id="about">
             <h4>About Me</h4>
             <img src="img/caracol.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetdur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
           <div id="login">
